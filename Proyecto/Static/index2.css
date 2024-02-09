@@ -1,0 +1,1425 @@
+:root {
+    --white: #fff;
+    --green: #84b813;
+    --red: #e02f46;
+    --darkgrey: #5b5b5b;
+    --grey: #a3a3a3;
+    --transgrey: #a3a3a377;
+    --maxpx: 1100px;
+    --font: 'Days One';
+    --trebuche: 'Trebuchet MS';
+    --segoe: 'Segoe UI';
+    --center: center;
+    --cero: 0px;
+    --ancho75: 75%;
+}
+
+@font-face {
+    font-family: 'Days One';
+    src: url('./Days_One/DaysOne-Regular.ttf');
+}
+
+* {
+    font-size: 15px;
+}
+
+.letradaysone {
+    font-family: var(--font);
+}
+
+.invisible {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo a {
+    color: var(--white);
+}
+
+.logo a::after {
+    content: '.';
+    color: var(--green);
+}
+
+body {
+    margin: var(--cero);
+    padding: var(--cero);
+}
+
+header {
+    background-image: url('images/imagendefondo.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+.navsize {
+    display: flex;
+    justify-content: var(--center);
+}
+
+li {
+    list-style: none;
+}
+
+.contacticons li {
+    margin: var(--cero);
+    margin-inline: 20px;
+    padding: var(--cero);
+}
+
+.navsize li {
+    margin-inline: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    transition: background-color 0.5s ease;
+}
+
+.barrasporcentaje li {
+    margin: var(--cero);
+    padding: var(--cero);
+    width: 48.6%;
+    margin-block: 10px;
+}
+
+.morefoodtext h3 {
+    color: var(--darkgrey);
+    font-size: 2em;
+    font-family: var(--font);
+    margin: var(--cero);
+
+}
+
+.morefoodtext p {
+    font-family: var(--trebuche);
+    color: var(--grey);
+    margin: var(--cero);
+    margin-block: 25px;
+    width: 85%;
+    line-height: 1.5em;
+}
+
+.textocentral1 h3 {
+    font-size: 4.3em;
+    color: var(--green);
+    font-family: var(--font);
+    margin: var(--cero);
+    padding: var(--cero);
+    animation: animacionh3 3s 1;
+}
+
+.comentscards article {
+    padding: 20px;
+    margin: var(--cero);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.morefood article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: var(--center);
+    gap: 1em;
+}
+
+.cartas h3 {
+    font-size: 1.6em;
+}
+
+.contactext div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    margin: var(--cero);
+    margin-block: 13px;
+    padding: var(--cero);
+    font-family: var(--trebuche);
+}
+
+.votos h3 {
+    display: none;
+}
+
+.goodandhealtytitle h3 {
+    display: block;
+    font-size: 2.6em;
+    font-family: var(--font);
+    margin: var(--cero);
+    padding: var(--cero);
+    margin-top: 15px;
+}
+
+.contactext>div h3 {
+    font-size: 2.66em;
+    margin: var(--cero);
+    padding-block-start: 15px;
+}
+
+.specialtieslist li {
+    display: block;
+    width: 28.6%;
+    margin-block: 10px;
+}
+
+.morefoodtext a {
+    color: var(--white);
+    padding-inline: 30px;
+    font-size: 1em;
+    padding-block: 15px;
+    border-radius: 40px;
+    font-family: var(--trebuche);
+    margin: var(--cero);
+}
+
+.ourmenulist li {
+    border: 1px solid;
+    padding-block: 8px;
+    margin: var(--cero);
+    margin-inline: 5px;
+    transition: 0.3s ease;
+}
+
+.ourmenuimg li {
+    display: inline-block;
+    margin: var(--cero);
+    padding: var(--cero);
+}
+
+.ourmenuimg img {
+    display: block;
+    width: 364px;
+    margin: var(--cero);
+    padding: var(--cero);
+    transition: all 0.3s ease;
+}
+
+.comentscards li {
+    background-color: var(--white);
+    color: var(--grey);
+    width: 340px;
+    padding: 40px;
+    margin: var(--cero);
+    margin-bottom: 10px;
+    font-family: var(--trebuche);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comentscards p {
+    margin-block: 35px;
+    padding-inline: 10px;
+    line-height: 1.5em;
+}
+
+.navsize li:hover {
+    background-color: var(--green);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+}
+
+.navspace {
+    display: flex;
+    align-items: var(--center);
+}
+
+.iconobusqueda {
+    width: 20px;
+    height: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: var(--center);
+}
+
+.navprincipal {
+    display: flex;
+}
+
+.navprincipal a {
+    color: var(--white);
+    font-family: var(--trebuche);
+}
+
+.ourmenutitle p {
+    margin: var(--cero);
+    margin-bottom: 35px;
+    padding: var(--cero);
+    font-size: 1.2em;
+    color: var(--grey);
+    width: 60%;
+    font-family: var(--trebuche);
+}
+
+.iconosizq {
+    width: 18px;
+    filter: invert(100%);
+    padding: 6px;
+    border-radius: 15px;
+    margin: var(--cero);
+}
+
+
+.headersize {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: var(--center) var(--center);
+    height: 80vh;
+}
+
+
+.iconosizq:hover {
+    transition: 0.5s;
+    background-color: var(--white);
+    filter: invert(0%);
+}
+
+.carrusel {
+    color: var(--white);
+    align-items: var(--center);
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    animation: animaciontexto 3s 1;
+}
+
+
+
+.textocentral1 span {
+    font-size: 2em;
+    margin: var(--cero);
+    padding: var(--cero);
+    font-family: var(--trebuche);
+}
+
+.textocentral1 p {
+    display: block;
+    width: 45%;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    font-family: var(--trebuche);
+
+}
+
+.textocentral1 a {
+    padding-block: 15px;
+    padding-inline: 37px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 0.8em;
+    font-family: var(--trebuche);
+    border-radius: 30px;
+}
+
+.redesizq {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: var(--center);
+    position: fixed;
+    left: -45px;
+    border-radius: 0 20px 20px 0;
+    top: 45%;
+    transition: all 0.5s ease;
+}
+
+.redesizq:hover {
+    left: 0;
+    background-color: #3c3e4580;
+    transition: all 0.5s ease;
+}
+
+.redesizq ul {
+    margin: var(--cero);
+    padding: 20px;
+    padding-block: 10px;
+    background-color: #28282845;
+    border-radius: 0 20px 20px 0;
+}
+
+/* 3 cartas del centro principal general */
+.cardsize {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: var(--center);
+}
+
+.cartas {
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    font-family: var(--trebuche);
+}
+
+.cartas article {
+    width: 280px;
+    height: 260px;
+    position: relative;
+    bottom: 100px;
+    padding: 30px;
+}
+
+.morefoodimg2 div,
+.morefoodimg div {
+    align-items: flex-start;
+    background-color: var(--white);
+    color: var(--grey);
+    font-size: 1.33em;
+    padding-inline: 25px;
+    padding-block: 20px;
+    font-family: var(--trebuche);
+    display: flex;
+    flex-direction: column;
+    background-size: 100%;
+    transition: all 0.3s ease-in-out;
+    margin-top: 5px;
+}
+
+.specialtieslist article {
+    display: flex;
+    border-radius: 30px 10px 10px;
+    transition: all 0.3s ease;
+
+}
+
+.votos article {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: var(--center);
+    align-items: var(--center);
+    font-family: var(--trebuche);
+}
+
+.cartas article:hover {
+    box-shadow: 0 7px 60px 3px rgba(42 42 42 / 20.5%);
+}
+
+.cartas span {
+    display: flex;
+    justify-content: var(--center);
+}
+
+.cartas img {
+    display: block;
+    width: 13%;
+    max-width: 80px;
+}
+
+
+
+.cartas p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+
+/* Carta cubiertos */
+.redcard {
+    background-color: var(--red);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.contacticons img {
+    width: 20px;
+    filter: opacity(65%);
+}
+
+.votos img {
+    width: 35px;
+}
+
+.redcard:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-out 0s;
+    background-color: aliceblue;
+    color: var(--grey);
+}
+
+.redcard:hover img {
+    content: url('./images/cubiertoshover.png');
+    transition: content 0.5s ease-in-out;
+}
+
+/* Carta comida */
+.greencard {
+    background-color: var(--green);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.greencard:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+    background-color: aliceblue;
+    color: var(--grey);
+}
+
+.greencard:hover img {
+    content: url('./images/comidahover.png');
+    transition: content 0.5s ease-in-out;
+}
+
+/* Carta horario */
+.blackcard {
+    background-color: var(--darkgrey);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.blackcard:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-out 0s;
+    background-color: aliceblue;
+    color: var(--grey);
+}
+
+.blackcard:hover img {
+    content: url('./images/horahover.png');
+    transition: content 0.5s ease-in-out;
+}
+
+/* Good & Healty */
+
+.goodandhealty {
+    display: flex;
+    justify-content: var(--center);
+    font-family: var(--segoe);
+}
+
+.goodandhealtysize {
+    max-width: var(--maxpx);
+    width: var(--ancho75);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #484b59;
+    align-items: var(--center);
+}
+
+.goodandhealtytitle {
+    display: block;
+    width: 38%;
+}
+
+.palabraverde {
+    color: var(--green);
+    font-size: 1em;
+}
+
+
+.goodandhealtytitle2 {
+    color: var(--red);
+    font-size: 1.3em;
+}
+
+.goodandhealtytext {
+    width: 60%;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+/* barras de porcentajes */
+.barrasize {
+    display: flex;
+    flex-flow: row wrap;
+    place-content: var(--center) space-around;
+    align-content: var(--center);
+    padding-block: 60px;
+}
+
+.barrasporcentaje {
+    color: var(--grey);
+    font-family: var(--segoe);
+    display: flex;
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: var(--center);
+    margin: var(--cero);
+    padding: var(--cero);
+    padding-block: 3%;
+}
+
+
+
+.porcentajetexto {
+    margin-block: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: var(--center);
+    justify-content: space-between;
+}
+
+.barragrey {
+    background-color: var(--transgrey);
+}
+
+.barragreen {
+    height: 10px;
+    margin: var(--cero);
+    padding: var(--cero);
+    background-color: var(--green);
+    color: var(--green);
+}
+
+.barrared {
+    height: 10px;
+    margin: var(--cero);
+    padding: var(--cero);
+    background-color: var(--red);
+    color: var(--red);
+}
+
+.barra1 {
+    width: 88%;
+    text-align: end;
+}
+
+.barra2 {
+    width: 78%;
+
+}
+
+.barra3 {
+    width: 94%;
+
+}
+
+.barra4 {
+    width: 85%;
+
+}
+
+.barra5 {
+    width: 90%;
+
+}
+
+/* book yor table */
+.tableimage {
+    background-image: url('images/fondodepantalla2.png');
+    min-height: 700px;
+    background-size: cover;
+    display: flex;
+    justify-content: var(--center);
+}
+
+.tablesize {
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    padding-block: 100px;
+    color: var(--white);
+    text-align: right;
+    display: flex;
+    flex-flow: column wrap;
+    place-content: flex-end flex-end;
+}
+
+.tablesize h2 {
+    font-size: 3em;
+    font-family: var(--trebuche);
+    margin: var(--cero);
+    padding: var(--cero);
+}
+
+.tableform {
+    max-width: 550px;
+    text-align: right;
+}
+
+.tabletext {
+    width: 50%;
+    max-width: 540px;
+    margin-block: 20px;
+    font-size: 1em;
+    font-family: var(--segoe);
+}
+
+.tableform label {
+    display: none;
+}
+
+.tableform input {
+    width: 42.8%;
+    background-color: transparent;
+    color: var(--white);
+    padding: 10px;
+    padding-block: 20px;
+    margin-inline-start: 15px;
+    margin-block: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--white);
+}
+
+.tableform ::placeholder {
+    color: var(--white);
+}
+
+.tableform textarea {
+    width: 93%;
+    background-color: transparent;
+    color: var(--white);
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 3px;
+    margin-block: 15px;
+}
+
+.tableform button {
+    padding: 15px;
+    padding-inline: 35px;
+    border-radius: 25px;
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+}
+
+.tableform button:hover {
+    background-color: var(--green);
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+
+}
+
+.specialtiesize {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: var(--center);
+}
+
+.specialties {
+    display: block;
+    text-align: center;
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+}
+
+.specialtiestitle {
+    margin-block: 100px;
+}
+
+.specialtiestitle span {
+    color: var(--red);
+    font-size: 1.6em;
+    font-family: var(--segoe);
+}
+
+.specialtiestitle h2 {
+    font-family: var(--font);
+    color: var(--darkgrey);
+    font-size: 3em;
+    margin: var(--cero);
+    margin-top: 15px;
+    padding: var(--cero);
+}
+
+.specialtieslist {
+    display: flex;
+    flex-flow: row wrap;
+    place-content: var(--center) var(--center);
+    justify-content: space-between;
+    padding: var(--cero);
+    margin: var(--cero);
+    padding-bottom: 100px;
+}
+
+
+
+
+
+.specialtieslist article:hover {
+    box-shadow: 5px 5px 20px rgba(0 0 0 / 12%);
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.specialtieslist article h3 {
+    margin: var(--cero);
+    margin-bottom: 10px;
+    padding: var(--cero);
+    color: var(--grey);
+    font-family: var(--segoe);
+}
+
+.specialtieslist article p {
+    margin: var(--cero);
+    padding: var(--cero);
+    padding-bottom: 15px;
+    color: var(--grey);
+    font-size: 1em;
+    font-family: var(--segoe);
+}
+
+.specialtieslist article div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.specialtiesimg {
+    margin-right: 15px;
+    padding: 20%;
+    border-radius: 50px;
+}
+
+.imgredback {
+    background-color: var(--red);
+}
+
+.imgreenback {
+    background-color: var(--green);
+}
+
+/* Contador de reseñas */
+.votosize {
+    background-image: url('images/fondodepantalla3.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-flow: row nowrap;
+    justify-content: var(--center);
+    align-items: var(--center);
+    margin-bottom: 100px;
+}
+
+.votos {
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--cero);
+    padding: var(--cero);
+    padding-block: 80px;
+    justify-content: space-around;
+}
+
+
+
+
+
+.votos span {
+    font-size: 2.6em;
+}
+
+.votos article div {
+    font-size: 1.2em;
+}
+
+/* Our menu */
+
+.ourmenusize {
+    margin: var(--cero);
+    padding: var(--cero);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: var(--center);
+}
+
+.ourmenu {
+    display: flex;
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    flex-flow: column nowrap;
+    justify-content: var(--center);
+    align-items: var(--center);
+    text-align: center;
+    margin: var(--cero);
+    padding: var(--cero);
+}
+
+.ourmenutitle {
+    margin: var(--cero);
+    padding: var(--cero);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: var(--center);
+}
+
+.ourmenutitle h2 {
+    margin: var(--cero);
+    margin-bottom: 25px;
+    padding: var(--cero);
+    font-size: 3em;
+    font-family: var(--font);
+    color: #484b59;
+}
+
+
+.ourmenulist {
+    margin: var(--cero);
+    margin-bottom: 20px;
+    padding: var(--cero);
+    display: flex;
+    flex-flow: wrap row;
+    place-content: var(--center) var(--center);
+    align-items: var(--center);
+    font-family: var(--trebuche);
+}
+
+
+
+.ourmenulist li:hover {
+    background-color: var(--green);
+    box-shadow: 5px 5px 20px rgba(62 62 62 / 12%);
+    transition: all 0.4s ease;
+    transform: scale(1.05);
+}
+
+.ourmenulist a {
+    padding: 20px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.ourmenulist a:hover {
+    color: var(--white);
+    transition: 0.3s ease;
+
+}
+
+.ourmenuimg {
+    width: 100%;
+    margin: var(--cero);
+    margin-bottom: 120px;
+    gap: 0.2em;
+    padding: var(--cero);
+    display: flex;
+    flex-flow: row wrap;
+    place-content: space-between var(--center);
+    align-items: var(--center);
+}
+
+
+
+.ourmenuimg img:hover {
+    filter: brightness(130%);
+    transform: scale(1.01);
+    transition: all 0.4s;
+}
+
+.comentsize {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: var(--center);
+    background-image: url('images/fondodepantalla4.png');
+    background-size: cover;
+    color: var(--white);
+}
+
+.coments {
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: var(--center);
+    justify-content: var(--center);
+    text-align: var(--center);
+    padding-block-end: 200px;
+}
+
+.coments h2 {
+    width: var(--ancho75);
+    font-size: 3em;
+    font-family: var(--font);
+    margin: var(--cero);
+    margin-top: 100px;
+    padding: var(--cero);
+}
+
+.comentsp {
+    width: 65%;
+    font-size: 1.13em;
+    font-family: var(--trebuche);
+    margin: var(--cero);
+    margin-block: 20px 60px;
+    padding: var(--cero);
+}
+
+.comentscards>li article {
+    display: flex;
+    flex-direction: column;
+    align-items: var(--center);
+}
+
+.comentscards {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: var(--center);
+    justify-content: space-around;
+    margin: var(--cero);
+    padding: var(--cero);
+    width: 100%;
+    gap: 2em;
+    flex-wrap: nowrap;
+}
+
+.comentscards li:hover {
+    background-color: var(--red);
+    color: var(--white);
+    transition: all 0.4s ease;
+}
+
+
+
+.comentscards article:hover>h3 {
+    color: var(--white);
+    transition: all 0.4s ease;
+}
+
+
+.comentscards span {
+    padding: var(--cero);
+    padding-bottom: 20px;
+    margin: var(--cero);
+    font-family: var(--trebuche);
+
+}
+
+.comillas {
+    width: 30px;
+    padding-top: 20px;
+}
+
+.persona {
+    width: 40px;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.comentsimgborder {
+    display: flex;
+    justify-content: var(--center);
+    border: #dcdcdc 1px solid;
+    padding: var(--cero);
+    margin: var(--cero);
+    border-radius: 50px;
+    width: 50px;
+}
+
+/* more food info */
+.morefoodsize {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: var(--center);
+}
+
+.morefood {
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    display: flex;
+    padding-block: 150px;
+    flex-direction: column;
+    gap: 4em;
+}
+
+
+
+.morefoodimg {
+    background-image: url('images/hamburguesafondo.png');
+    background-size: cover;
+    padding-inline: 40% 5px;
+    padding-block: 5px 30%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.morefoodimg2 {
+    background-image: url('images/ensaladafondo.png');
+    background-size: cover;
+    padding-inline: 40% 5px;
+    padding-block: 5px 30%;
+    align-items: flex-start;
+    display: flex;
+}
+
+
+
+.morefoodimg:hover div,
+.morefoodimg2:hover div {
+    background-color: var(--red);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+/* texto de la primera imagen */
+.morefoodtext:nth-child(2) {
+    text-align: right;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: var(--center);
+    align-items: flex-end;
+    min-width: 440px;
+
+}
+
+/* texto de la segunda imagen */
+.morefoodtext:nth-child(1) {
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: var(--center);
+    align-items: flex-start;
+    min-width: 440px;
+}
+
+
+.green {
+    transition: all 0.3s ease-in-out;
+    background: var(--green);
+}
+
+.morefoodtext .green:hover {
+    background-color: var(--red);
+    transition: all 0.3s ease-in-out;
+}
+
+.red {
+    background-color: var(--red);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.morefoodtext .red:hover {
+    background-color: var(--green);
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+
+/* ubicacion */
+.mapimgsize {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: var(--center);
+    background-image: url('images/fondodepantalla5.png');
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.mapcontact {
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: var(--center);
+    margin-block: 100px;
+    gap: 2em;
+}
+
+.contactext {
+    display: flex;
+    color: var(--white);
+    flex-flow: column nowrap;
+    justify-content: var(--center);
+    align-items: flex-start;
+    margin: var(--cero);
+    padding: var(--cero);
+}
+
+
+
+.contactext span {
+    font-family: var(--trebuche);
+    margin: var(--cero);
+    margin-block: 3px;
+    padding: var(--cero);
+}
+
+.piedepaginacontactosize {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.piedepaginacontactos {
+    width: var(--ancho75);
+    max-width: var(--maxpx);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: var(--center);
+    align-items: var(--center);
+    text-align: center;
+    margin: 100px;
+}
+
+.contacticons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: var(--center);
+    margin: var(--cero);
+    padding: var(--cero);
+}
+
+
+.menutablet {
+    display: none;
+}
+
+@keyframes animaciontexto {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animacionh3 {
+    0% {
+        color: var(--green);
+    }
+
+    50% {
+        color: var(--red);
+    }
+
+    100% {
+        color: var(--green);
+    }
+}
+
+/* TABLET */
+@media (width<=1465px) {
+    .comentscards>li article {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .navprincipal {
+        background-color: #3c3e4580;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        right: -150px;
+        top: 42%;
+        padding: 10px;
+        transition: all 1s ease;
+        z-index: 1;
+    }
+
+    .iconosizq {
+        scale: 1.2;
+        margin: 10px;
+    }
+
+    .navprincipal:hover {
+        background-color: #3c3e45c8;
+        right: -15px;
+        transition: all 1s ease;
+    }
+
+    .navprincipal li {
+        padding: 10px;
+        font-size: 1.33em;
+    }
+
+
+    .cartas article.redcard,
+    .cartas article.greencard {
+        width: 41%;
+    }
+
+    .cartas article.blackcard {
+        width: 100%;
+        padding-bottom: 0;
+        background-color: var(--darkgrey);
+    }
+
+    .goodandhealty {
+        align-items: var(--center);
+    }
+
+    .goodandhealtytitle {
+        width: 100%;
+        text-align: var(--center);
+        display: flex;
+        flex-direction: column;
+        align-items: var(--center);
+    }
+
+    .goodandhealty h3 {
+        width: 60%;
+    }
+
+    .morefoodimg,
+    .morefoodimg2 {
+        width: 24%;
+        justify-content: end;
+    }
+
+    .goodandhealtytext {
+        width: 100%;
+        text-align: var(--center);
+        display: flex;
+        flex-direction: column;
+        align-items: var(--center);
+    }
+
+    .carrusel {
+        display: flex;
+    }
+
+    .textocentral1 {
+        text-align: var(--center);
+        display: flex;
+        align-items: var(--center);
+        flex-direction: column;
+    }
+
+    .textocentral1 p {
+        width: 50%;
+    }
+
+    .comentscards h3 {
+        color: var(--red);
+        font-family: var(--font);
+        transition: all 0.4s ease;
+    }
+
+    .specialtieslist {
+        justify-content: var(--center);
+    }
+
+    .ourmenuimg {
+        justify-content: var(--center);
+        align-items: var(--center);
+        gap: 5px;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    .comentscards {
+        align-items: var(--center);
+        justify-content: var(--center);
+        gap: 2em;
+    }
+
+}
+
+/* MOVIL */
+@media (width <=1033px) {
+    .morefood article {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .morefoodtext:nth-child(2),
+    .morefoodtext:nth-child(1) {
+        align-items: var(--center);
+        width: 80%;
+    }
+
+    .morefoodtext:nth-child(1) {
+        order: 2;
+    }
+
+    .morefoodtext p {
+        text-align: var(--center);
+    }
+
+    .mapcontact {
+        flex-direction: column;
+    }
+
+    .contactext,
+    .contactext span,
+    .contactext div {
+        align-items: var(--center);
+        text-align: var(--center);
+    }
+
+    .cartas {
+        justify-content: var(--center);
+        gap: 2em;
+    }
+
+    .cartas article.redcard,
+    .cartas article.greencard {
+        width: 100%;
+    }
+
+    .cartas article>p {
+        padding-inline: 20%;
+    }
+
+    .redesizq {
+        left: -60px;
+    }
+
+    .tableform {
+        flex-direction: column;
+        justify-content: var(--center);
+    }
+
+    .tableform input {
+        width: 93%;
+        margin-inline: 0;
+    }
+}
+
+@media (width<=750px) {
+    .barrasporcentaje {
+        flex-direction: column;
+    }
+
+    .tablesize {
+        align-items: center;
+        text-align: center;
+    }
+
+    .barrasporcentaje li {
+        width: 100%;
+    }
+
+    .specialtieslist {
+        flex-direction: column;
+    }
+
+    .specialtieslist li {
+        width: 100%;
+    }
+
+    .votos {
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    .comentscards {
+        flex-direction: column;
+    }
+}
