@@ -1,10 +1,10 @@
 :root {
-    --white: #fff;
-    --green: #84b813;
-    --red: #e02f46;
-    --darkgrey: #5b5b5b;
-    --grey: #a3a3a3;
-    --transgrey: #a3a3a377;
+    --white: #ffffff;
+    --green: #245325;
+    --red: #d32f2f;
+    --darkgrey: #333333;
+    --grey: #757575;
+    --transgrey: #75757577;
     --maxpx: 1100px;
     --font: 'Days One';
     --trebuche: 'Trebuchet MS';
@@ -12,6 +12,15 @@
     --center: center;
     --cero: 0px;
     --ancho75: 75%;
+}
+
+
+/* Example of a class with specific contrast requirements */
+.highlighted-text {
+    color: #ffffff;
+    /* Adjust text color */
+    background-color: #ff0000;
+    /* Adjust background color */
 }
 
 @font-face {
