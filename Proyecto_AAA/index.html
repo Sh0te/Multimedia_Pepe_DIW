@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MegaOne</title>
     <link rel="stylesheet" href="Static/index2.css">
+    <link rel="stylesheet" href="Static/javascript/index.js">
 </head>
 <style>
     *::selection {
@@ -19,11 +20,16 @@
 </style>
 
 <body>
-
-    <header>
-        <section class="reservainicial">
+    <section class="reservainicial">
+        <div>
             <a href="#tabla-form">Hacer reserva</a>
-        </section>
+        </div>
+        <div class="progressbar">
+            <div class="progress"></div>
+        </div>
+    </section>
+    <header>
+
         <section class="navsize">
             <div class="navegacion">
                 <h1 class="logo letradaysone"><a class="linklogo" href="/">MegaOne</a></h1>
@@ -658,5 +664,23 @@
         </section>
     </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const targetSection = document.getElementById('tabla-form');
+
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const sectionTop = targetSection.offsetTop;
+
+            const progress = document.querySelector('.reservainicial .progress');
+            const progressWidth = Math.min(100, (scrollTop / sectionTop) * 100);
+            progress.style.width = `${progressWidth}%`;
+        });
+    });
+
+
+
+
+</script>
 
 </html>
