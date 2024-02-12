@@ -111,12 +111,10 @@ li {
 }
 
 .comentscards article {
-    padding: 20px;
+    padding: 10px;
     margin: var(--cero);
-    display: flex;
     flex-flow: column nowrap;
     justify-content: var(--center);
-    align-items: var(--center);
 }
 
 .morefood article {
@@ -211,6 +209,23 @@ li {
     align-items: center;
 }
 
+.reservainicial {
+    display: flex;
+    justify-content: center;
+    background-color: var(--transgrey);
+}
+
+.reservainicial a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: var(--font);
+    transition: all 0.5s;
+}
+
+.reservainicial a:hover {
+    color: var(--green);
+}
+
 .comentscards p {
     margin-block: 35px;
     padding-inline: 10px;
@@ -226,6 +241,7 @@ li {
     justify-content: space-between;
     width: var(--ancho75);
     max-width: var(--maxpx);
+    position: sticky;
 }
 
 .navspace {
@@ -651,12 +667,8 @@ li {
     font-family: var(--segoe);
 }
 
-.tableform label {
-    display: none;
-}
-
 .tableform input {
-    width: 42.8%;
+    width: 25%;
     background-color: transparent;
     color: var(--white);
     padding: 10px;
@@ -928,12 +940,11 @@ li {
 }
 
 .coments {
-    width: var(--ancho75);
     max-width: var(--maxpx);
     display: flex;
     flex-flow: column nowrap;
     align-items: var(--center);
-    justify-content: var(--center);
+
     text-align: var(--center);
     padding-block-end: 200px;
 }
@@ -1328,6 +1339,15 @@ li {
         gap: 2em;
     }
 
+}
+
+@media (width <=1200px) {
+
+    ul.comentscards {
+
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* MOVIL */
