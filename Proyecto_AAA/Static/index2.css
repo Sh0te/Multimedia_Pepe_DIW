@@ -44,6 +44,10 @@
     font-size: 15px;
 }
 
+img {
+    width: 100px;
+}
+
 .letradaysone {
     font-family: var(--font);
 }
