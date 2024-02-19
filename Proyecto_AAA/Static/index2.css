@@ -44,10 +44,6 @@
     font-size: 15px;
 }
 
-img {
-    width: 100px;
-}
-
 .letradaysone {
     font-family: var(--font);
 }
@@ -1471,4 +1467,8 @@ li {
     .comentscards {
         flex-direction: column;
     }
+}
+
+img {
+    width: 100px;
 }
