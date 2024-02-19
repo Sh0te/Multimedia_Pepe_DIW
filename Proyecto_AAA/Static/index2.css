@@ -71,7 +71,7 @@ body {
 }
 
 header {
-    background-image: url('images/imagendefondo.png');
+    background-image: url('images/imagendefondo.webp');
     background-size: cover;
     height: 100vh;
 }
